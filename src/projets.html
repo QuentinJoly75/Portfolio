@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Accueil</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/projets.css" />
+    <link rel="shortcut icon" href="../ressources/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../ressources/img/favicon.ico">
+</head>
+<body>
+
+<header>
+    <h1>Mon Portfolio</h1>
+    <nav class="main-nav">
+        <ul>
+            <li>
+                <a href="./" >
+                    <img src="https://img.icons8.com/?size=100&id=i6fZC6wuprSu&format=png&color=ffffff" alt="Accueil" />
+                    <span class="label">Accueil</span>
+                </a>
+            </li>
+            <li>
+                <a href="projets.html" class="active">
+                    <img src="https://img.icons8.com/?size=100&id=oEFC8Dw5xx9o&format=png&color=ffffff" alt="Projets" />
+                    <span class="label">Projets</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <img src="https://img.icons8.com/?size=100&id=PedPR10iVAnY&format=png&color=ffffff" alt="Contact" />
+                    <span class="label">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="layout">
+    <main>
+        <!-- Contenu principal selon la page -->
+
+        <div id="projets" class="projects-container">
+            <h1>Mes Projets</h1>
+            <p class="projects-intro">
+                Sur cette page, vous trouverez mes différents projets, qu'ils aient été réalisé dans le cadre de mes études, ou à titre personnel.
+                Certains sont encore en développement.
+            </p>
+
+            <div class="projects-section">
+                <div class="projets-type">
+                    <h2>Académiques</h2>
+                    <ul class="projects-grid">
+
+                        <li class="project-card">
+                            <h2>Sconote</h2>
+                            <p>Description du projet 1. Ce projet a été réalisé avec HTML, CSS et JavaScript.</p>
+                            <div class="technologies">
+                                <p>HTML / CSS</p>
+                                <p>PHP</p>
+                                <p>JS</p>
+                            </div>
+                            <button class="button-projects">En savoir plus</button>
+                        </li>
+                        <li class="project-card">
+                            <h2>Very Bad Split</h2>
+                            <p>Description du projet 2. Ce projet utilise React pour créer une application dynamique.</p>
+
+                            <button class="button-projects">En savoir plus</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="section-divider" />
+
+                <div>
+                    <h2>Personnel</h2>
+                    <ul class="projects-grid">
+                        <li class="project-card">
+                            <h2>Paperback's Extensions</h2>
+                            <p>Description du projet 3. Ce projet est une application mobile développée avec Flutter.</p>
+                            <button class="button-projects">En savoir plus</button>
+                        </li>
+
+                        <li class="project-card">
+                            <h2>Projet 4</h2>
+                            <p>Description du projet 3. Ce projet est une application mobile développée avec Flutter.</p>
+                            <button class="button-projects">En savoir plus</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</div>
+
+<footer>
+    <p>&copy; 2025 Quentin Joly. Tous droits réservés.</p>
+</footer>
+
+
+<script src="navigation.js"></script>
+</body>
+</html>
+
+

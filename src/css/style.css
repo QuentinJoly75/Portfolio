@@ -1,0 +1,244 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #ffffff 0%, rgba(136, 0, 176, 0.15) 100%);
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Layout principal */
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 150px); /* Ajusté pour tenir compte du header plus grand */
+    width: 100%;
+    overflow: visible;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: inherit;
+}
+
+/* Header avec navigation  */
+header {
+    width: 100%;
+    background: linear-gradient(90deg, #8800B0FF 0%, #640785 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+/* Menu de navigation horizontal */
+.main-nav {
+    width: 100%;
+    max-width: 900px; /* Augmenté pour accommoder des boutons plus grands */
+    margin: 0 auto;
+}
+
+.main-nav ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Style pour chaque élément de la liste */
+.main-nav ul li {
+    position: relative;
+    margin: 0 5px; /* Réduit pour plus d'espace entre boutons */
+    flex-grow: 1; /* Permet aux boutons de s'élargir */
+    max-width: 200px; /* Limite la largeur maximale */
+}
+
+.main-nav ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Centre les éléments horizontalement */
+    padding: 12px 20px; /* Augmenté pour des boutons plus grands */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+    width: 100%; /* Utilise toute la largeur disponible */
+}
+
+/* Style pour l'effet de survol */
+.main-nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Style pour la page active */
+.main-nav ul li a.active {
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 3px solid #ffffff;
+}
+
+.main-nav img {
+    width: 28px; /* Augmenté de 24px à 28px */
+    height: 28px; /* Augmenté de 24px à 28px */
+    filter: brightness(0) invert(1);
+    margin-right: 10px; /* Légèrement augmenté */
+    transition: transform 0.3s ease;
+}
+
+.main-nav li a:hover img {
+    transform: scale(1.15);
+}
+
+.main-nav .label {
+    font-size: 1rem; /* Augmenté de 0.9rem à 1rem */
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Ajustement du contenu principal */
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: auto;
+    background-color: transparent;
+}
+
+/* Section principale */
+main {
+    flex-grow: 1;
+    padding: 2.5rem;
+    overflow-y: auto;
+    animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome h2 {
+    font-size: 2.4rem;
+    color: #6a11cb;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 12px;
+    font-weight: 700;
+}
+
+.welcome h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 80px;
+    background: linear-gradient(90deg, #8800B0FF 0%, #640785 100%);
+    border-radius: 3px;
+}
+
+.welcome p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .main-nav ul li {
+        margin: 5px;
+    }
+
+    header h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    .welcome h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Style du footer */
+footer {
+    width: 100%;
+    padding: 1.5rem 0;
+    background: linear-gradient(90deg, #8800B0FF 0%, #640785 100%);
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+footer p {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 3px;
+}
+
+

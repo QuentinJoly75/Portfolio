@@ -1,0 +1,202 @@
+html {
+    scrollbar-gutter: stable; /* Réserve l'espace pour la barre même quand absente */
+}
+
+#contact {
+        background: linear-gradient(90deg, #8800B0FF 0%, #640785 100%);
+    border-radius: 12px;
+    box-shadow: 0 10px 35px rgba(106, 17, 203, 0.3);
+    width: 85%;
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 2.5rem;
+    text-align: center;
+    color: white;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.6s ease-out;
+}
+
+#contact:hover {
+}
+
+#contact h1 {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+#contact h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+#contact h2 {
+    margin: 1rem 0;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+#contact h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+
+#infoContact .divContact {
+    flex: 1;
+    min-width: 220px;
+}
+
+#infoContact .divContact h3 {
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+#infoContact a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+/* Style pour la section "listeContact" */
+#listeContact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.divContact {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.8rem;
+    margin-bottom: 1.2rem;
+    width: auto;
+    min-width: 220px;
+    max-width: 45%;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.divContact:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+#listeContact .divContact {
+    flex: 1;
+}
+
+#listeContact a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    gap: 12px;
+}
+
+#listeContact img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+#listeContact a:hover img {
+    transform: scale(1.15);
+}
+
+#listeContact .text {
+    font-weight: 500;
+    font-size: 1.05rem;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+}
+
+#infoContact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 3rem;
+    align-items: stretch; /* Force les enfants à avoir la même hauteur */
+    margin-top: 1rem;
+    gap: 1.8rem;
+}
+
+#infoContact .divContact {
+    flex: 1;
+    min-width: 200px;
+    max-width: 45%;
+    margin: 0; /* Supprime les marges qui peuvent causer des problèmes */
+    height: auto; /* Laisse la hauteur s'adapter naturellement */
+    display: flex;
+    flex-direction: column;
+}
+
+#contactLoc, #contactMail {
+    padding: 1.5rem;
+    width: auto;
+}
+
+#contactMail a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    height: 100%; /* Remplit tout l'espace disponible */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #contact {
+        width: 90%;
+        padding: 2rem 1.5rem;
+        margin: 1.5rem auto;
+    }
+
+    .divContact {
+        min-width: 100%;
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    #listeContact, #infoContact {
+        gap: 1rem;
+    }
+}
+
