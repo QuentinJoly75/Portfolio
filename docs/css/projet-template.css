@@ -1,0 +1,182 @@
+/* Styles pour les pages de projet */
+
+/* Style général de la page */
+.project-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* En-tête du projet */
+.project-header {
+    background: linear-gradient(90deg, #8800B0FF 0%, #640785 100%);
+    padding: 3rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 30px rgba(136, 0, 176, 0.2);
+}
+
+.project-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Section du projet */
+.project-section {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-section h2 {
+    color: #8800B0FF;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.project-section h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #8800B0FF 0%, #640785 100%);
+}
+
+.project-section p {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* Images du projet */
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    justify-content: center;
+}
+
+.project-images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-images img:hover {
+    transform: scale(1.02);
+}
+
+.main-image {
+    width: 100%;
+    max-width: 800px;
+}
+
+.thumbnail {
+    width: 300px;
+}
+
+/* Technologies utilisées */
+.technologies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.tech-tag {
+    background-color: #f0e8f5;
+    color: #8800B0FF;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Compétences du référentiel */
+.competences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.competence-card {
+    background-color: #f9f5fc;
+    border-left: 4px solid #8800B0FF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.competence-card h3 {
+    color: #8800B0FF;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.competence-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Liens */
+.project-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    display: inline-block;
+    background: linear-gradient(90deg, #8800B0FF 0%, #640785 100%);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(136, 0, 176, 0.2);
+}
+
+.project-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(136, 0, 176, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-container {
+        width: 90%;
+        padding: 1rem 0;
+    }
+
+    .project-header {
+        padding: 2rem;
+    }
+
+    .project-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .project-section {
+        padding: 1.5rem;
+    }
+
+    .competences-grid {
+        grid-template-columns: 1fr;
+    }
+}
