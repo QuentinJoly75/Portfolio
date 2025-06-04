@@ -1,0 +1,267 @@
+/* Styles spécifiques à la page d'accueil */
+
+/* Section de bienvenue */
+.welcome {
+    text-align: center;
+}
+
+.welcome h2 {
+    font-size: 2.4rem;
+    color: #6a11cb;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 12px;
+    font-weight: 700;
+}
+
+.welcome h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    width: 80px;
+    background: linear-gradient(90deg, #8800B0FF 0%, #640785 100%);
+    border-radius: 3px;
+    transform: translateX(-50%);
+}
+
+.welcome p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    color: #555;
+    margin: 0 auto;
+}
+
+/* Style pour le lien "En savoir plus" dans la section de présentation */
+.about-link {
+    color: #8800B0FF;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.about-link:hover {
+    background-color: rgba(136, 0, 176, 0.1);
+    transform: translateX(5px);
+}
+
+/* Styles pour les projets (importés de projets.css) */
+.projects-container {
+    background: linear-gradient(90deg, #8800B0FF 0%, #640785 100%);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(136, 0, 176, 0.2);
+    width: 85%;
+    max-width: 1200px;
+    margin: 2.5rem auto;
+    padding: 2.5rem;
+    color: white;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.projects-container h1 {
+    text-align: center;
+}
+
+.projects-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.projects-intro h1 {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.projects-intro h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.projects-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.projects-section {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.projects-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+.projects-section h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(0);
+    width: 40px;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.projects-section > div > h2 {
+    text-align: center;
+}
+
+.projects-section > div > h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+}
+
+.projects-grid {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    list-style: none;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-sizing: border-box;
+    width: 48%;
+}
+
+.project-card img {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    object-fit: contain;
+    margin-bottom: 2rem;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.project-card .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.project-card .tech-tag {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.section-divider {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 10rem 0;
+}
+
+.button-projects {
+    position: relative;
+    display: inline-block;
+    background-color: #ffffff;
+    color: #8800B0FF;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
+    align-self: center;
+    width: 50%;
+    text-align: center;
+}
+
+.button-projects:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour la section des projets sur la page d'accueil */
+.index-projects {
+    margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .welcome h2 {
+        font-size: 2rem;
+    }
+
+    .projects-container {
+        width: 90%;
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+    }
+
+    .projects-intro h1 {
+        font-size: 1.8rem;
+    }
+
+    .projects-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .project-card {
+        height: auto;
+        min-height: 18rem;
+    }
+}
