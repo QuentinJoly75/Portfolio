@@ -1,0 +1,292 @@
+/* Styles spécifiques à la page À propos */
+
+/* Style général des sections */
+.about-section {
+    background: linear-gradient(90deg, #8800B0FF 0%, #640785 100%);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(136, 0, 176, 0.2);
+    width: 85%;
+    max-width: 1200px;
+    margin: 2.5rem auto;
+    padding: 2.5rem;
+    color: white;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.about-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+.about-section h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Style pour l'introduction */
+.about-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-intro h1 {
+    font-size: 2.4rem;
+    color: #6a11cb;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 12px;
+    font-weight: 700;
+}
+
+.about-intro h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    width: 80px;
+    background: linear-gradient(90deg, #8800B0FF 0%, #640785 100%);
+    border-radius: 3px;
+    transform: translateX(-50%);
+}
+
+.about-intro p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    color: #555;
+    margin: 0 auto;
+}
+
+/* Style pour les listes */
+.about-section ul {
+    list-style-type: none;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about-section ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.about-section ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+}
+
+/* Style pour les cartes d'intérêts */
+.interests-grid {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    justify-content: space-around;
+}
+
+.interest-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 15rem;
+}
+
+.interest-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.interest-card i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.interest-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Style pour le parcours de formation */
+.timeline {
+    position: relative;
+    margin: 2rem 0;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #8800B0FF;
+    transform: translateX(-165%);
+}
+
+.timeline-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item .date {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+}
+
+/* Style pour les projets professionnels */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Cercles de compétences */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+}
+
+.skill-circle {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.circle-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 140px;
+    transform: rotate(-90deg); /* Remet à -90deg pour démarrer en haut */
+    z-index: 1;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: rgba(255,255,255,0.15);
+    stroke-width: 12;
+}
+
+.circle-bar {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 12;
+    stroke-linecap: round;
+    stroke-dasharray: 0; /* La valeur sera définie par JavaScript */
+    stroke-dashoffset: 0; /* La valeur sera définie par JavaScript */
+    transition: stroke-dashoffset 1.2s cubic-bezier(.77,0,.18,1);
+    /* Supprime la rotation du cercle lui-même */
+}
+
+.circle-label {
+    position: absolute;
+    font-size: 1.2rem;
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Animation pour les sections au défilement */
+.fade-in {
+    opacity: 1; /* Éléments visibles par défaut */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-section {
+        width: 90%;
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+    }
+
+    .about-intro h1 {
+        font-size: 2rem;
+    }
+
+    .interests-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}

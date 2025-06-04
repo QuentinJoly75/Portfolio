@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Accueil</title>
+    <title>À propos</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/projets.css" />
+    <link rel="stylesheet" href="css/apropos.css" />
     <link rel="shortcut icon" href="../ressources/img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="../ressources/img/favicon.ico">
 </head>
@@ -45,11 +45,226 @@
 
 <div class="layout">
     <main>
-        <!-- Contenu principal selon la page -->
+        <!-- Introduction -->
+        <section class="about-intro">
+            <h1>À propos de moi</h1>
+            <p>Découvrez qui je suis, mes passions, mon parcours et mes ambitions professionnelles.</p>
+        </section>
 
+        <!-- Biographie -->
+        <section class="about-section fade-in">
+            <h2>Biographie</h2>
+            <p>Je m'appelle Quentin Joly, je suis un développeur web passionné par la création d'applications innovantes et intuitives. Né avec une curiosité naturelle pour la technologie, j'ai commencé à m'intéresser au développement informatique dès mon plus jeune âge.</p>
+            <p>Aujourd'hui, je poursuis mes études en BUT Informatique où j'acquiers des compétences solides en développement web, mobile et en gestion de projets. Je suis particulièrement intéressé par les technologies modernes qui permettent de créer des expériences utilisateur fluides et agréables.</p>
+            <p>En dehors de mes études, je travaille sur des projets personnels qui me permettent d'explorer de nouvelles technologies et de mettre en pratique mes connaissances.</p>
+        </section>
 
+        <!-- Compétences -->
+        <section class="about-section fade-in">
+            <h2>Compétences</h2>
+            <p>Voici les principales compétences que j'ai développées au cours de ma formation et de mes projets personnels :</p>
 
-        </div>
+            <!-- Développement Front-end -->
+            <div class="skills-category">
+                <h3 class="skills-category-title">Développement Front-end</h3>
+                <div class="skills-grid">
+                    <div class="skill-circle" data-percentage="90">
+                        <svg class="circle-svg" width="140" height="140">
+                            <circle class="circle-bg" cx="70" cy="70" r="56" />
+                            <circle class="circle-bar" cx="70" cy="70" r="56" />
+                        </svg>
+                        <div class="circle-label">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skill-circle" data-percentage="85">
+                        <svg class="circle-svg" width="140" height="140">
+                            <circle class="circle-bg" cx="70" cy="70" r="56" />
+                            <circle class="circle-bar" cx="70" cy="70" r="56" />
+                        </svg>
+                        <div class="circle-label">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skill-circle" data-percentage="60">
+                        <svg class="circle-svg" width="140" height="140">
+                            <circle class="circle-bg" cx="70" cy="70" r="56" />
+                            <circle class="circle-bar" cx="70" cy="70" r="56" />
+                        </svg>
+                        <div class="circle-label">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">60%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Développement Back-end -->
+            <div class="skills-category">
+                <h3 class="skills-category-title">Développement Back-end</h3>
+                <div class="skills-grid">
+                    <div class="skill-circle" data-percentage="75">
+                        <svg class="circle-svg" width="140" height="140">
+                            <circle class="circle-bg" cx="70" cy="70" r="56" />
+                            <circle class="circle-bar" cx="70" cy="70" r="56" />
+                        </svg>
+                        <div class="circle-label">
+                            <span class="skill-name">PHP</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                    </div>
+                    <div class="skill-circle" data-percentage="30">
+                        <svg class="circle-svg" width="140" height="140">
+                            <circle class="circle-bg" cx="70" cy="70" r="56" />
+                            <circle class="circle-bar" cx="70" cy="70" r="56" />
+                        </svg>
+                        <div class="circle-label">
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-percentage">30%</span>
+                        </div>
+                    </div>
+                    <div class="skill-circle" data-percentage="70">
+                        <svg class="circle-svg" width="140" height="140">
+                            <circle class="circle-bg" cx="70" cy="70" r="56" />
+                            <circle class="circle-bar" cx="70" cy="70" r="56" />
+                        </svg>
+                        <div class="circle-label">
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                    </div>
+                    <div class="skill-circle" data-percentage="85">
+                        <svg class="circle-svg" width="140" height="140">
+                            <circle class="circle-bg" cx="70" cy="70" r="56" />
+                            <circle class="circle-bar" cx="70" cy="70" r="56" />
+                        </svg>
+                        <div class="circle-label">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skill-circle" data-percentage="70">
+                        <svg class="circle-svg" width="140" height="140">
+                            <circle class="circle-bg" cx="70" cy="70" r="56" />
+                            <circle class="circle-bar" cx="70" cy="70" r="56" />
+                        </svg>
+                        <div class="circle-label">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gestion de Projet -->
+            <div class="skills-category">
+                <h3 class="skills-category-title">Gestion de Projet</h3>
+                <div class="skills-grid">
+                    <div class="skill-circle" data-percentage="85">
+                        <svg class="circle-svg" width="140" height="140">
+                            <circle class="circle-bg" cx="70" cy="70" r="56" />
+                            <circle class="circle-bar" cx="70" cy="70" r="56" />
+                        </svg>
+                        <div class="circle-label">
+                            <span class="skill-name">Agile</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skill-circle" data-percentage="90">
+                        <svg class="circle-svg" width="140" height="140">
+                            <circle class="circle-bg" cx="70" cy="70" r="56" />
+                            <circle class="circle-bar" cx="70" cy="70" r="56" />
+                        </svg>
+                        <div class="circle-label">
+                            <span class="skill-name">Git</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skill-circle" data-percentage="85">
+                        <svg class="circle-svg" width="140" height="140">
+                            <circle class="circle-bg" cx="70" cy="70" r="56" />
+                            <circle class="circle-bar" cx="70" cy="70" r="56" />
+                        </svg>
+                        <div class="circle-label">
+                            <span class="skill-name">GitHub</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parcours de formation -->
+        <section class="about-section fade-in">
+            <h2>Parcours de formation</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>BUT Informatique</h3>
+                    <div class="date">2023 - Présent</div>
+                    <p>Formation complète en informatique avec spécialisation en développement d'applications. Acquisition de compétences en programmation, bases de données, réseaux et gestion de projets.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Baccalauréat Général</h3>
+                    <div class="date">2020 - 2023</div>
+                    <p>Spécialités Mathématiques et Numérique et Sciences Informatiques (NSI). Obtention avec mention.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Formation en ligne</h3>
+                    <div class="date">En continu</div>
+                    <p>Autoformation sur diverses plateformes (Udemy, OpenClassrooms, FreeCodeCamp) pour approfondir mes connaissances en développement web et mobile.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projets professionnels -->
+        <section class="about-section fade-in">
+            <h2>Projets professionnels envisagés après le BUT</h2>
+            <p>Après l'obtention de mon BUT, j'envisage plusieurs voies professionnelles :</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Développeur Full Stack</h3>
+                    <p>Travailler dans une entreprise innovante pour développer des applications web complètes, de la conception de l'interface utilisateur à la gestion des bases de données.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Poursuite d'études en Master</h3>
+                    <p>Approfondir mes connaissances en informatique avec une spécialisation en intelligence artificielle ou en cybersécurité.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Entrepreneuriat</h3>
+                    <p>Créer ma propre startup dans le domaine du développement d'applications ou proposer des services de développement en freelance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Centres d'intérêt -->
+        <section class="about-section fade-in">
+            <h2>Centres d'intérêt</h2>
+            <p>Voici quelques-unes de mes passions qui m'inspirent au quotidien :</p>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Développement Web</h3>
+                    <p>Création de sites et d'applications web modernes et réactives.</p>
+                </div>
+                <div class="interest-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Applications Mobiles</h3>
+                    <p>Développement d'applications pour iOS et Android.</p>
+                </div>
+                <div class="interest-card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Jeux Vidéo</h3>
+                    <p>Passion pour les jeux vidéo et leur conception.</p>
+                </div>
+                <div class="interest-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Lecture</h3>
+                    <p>Livres techniques et science-fiction.</p>
+                </div>
+            </div>
+        </section>
     </main>
 </div>
 
@@ -57,9 +272,7 @@
     <p>&copy; 2025 Quentin Joly. Tous droits réservés.</p>
 </footer>
 
-
 <script src="navigation.js"></script>
+<script src="apropos.js"></script>
 </body>
 </html>
-
-
