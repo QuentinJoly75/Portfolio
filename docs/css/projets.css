@@ -84,7 +84,7 @@
 
 .projects-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -97,12 +97,12 @@
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
     list-style: none;
-    height: 25rem;
+    height: 20rem;
 }
 
 .project-card img {
     width: 100%;
-    height: 100%;
+    max-height: 150px;
     border-radius: 8px;
     object-fit: contain;
 }
@@ -146,7 +146,7 @@
 }
 
 .button-projects {
-    position: fixed;
+    position: relative;
     display: inline-block;
     background-color: #ffffff;
     color: #8800B0FF;
@@ -154,8 +154,14 @@
     border-radius: 30px;
     font-weight: 600;
     text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    bottom: 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
+}
+
+.button-projects:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive design */
@@ -177,5 +183,10 @@
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    .project-card {
+        height: auto;
+        min-height: 18rem;
     }
 }

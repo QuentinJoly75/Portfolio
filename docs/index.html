@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Accueil</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="shortcut icon" href="../ressources/img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="../ressources/img/favicon.ico">
 </head>
@@ -18,6 +19,12 @@
                 <a href="./" class="active">
                     <img src="https://img.icons8.com/?size=100&id=i6fZC6wuprSu&format=png&color=ffffff" alt="Accueil" />
                     <span class="label">Accueil</span>
+                </a>
+            </li>
+            <li>
+                <a href="apropos.html">
+                    <img src="https://img.icons8.com/?size=100&id=zxB19VPoVLjK&format=png&color=000000" alt="À propos" />
+                    <span class="label">À propos</span>
                 </a>
             </li>
             <li>
@@ -38,7 +45,51 @@
 
 <div class="layout">
     <main>
-        <!-- Contenu principal selon la page -->
+        <!-- Section de présentation -->
+        <section class="welcome">
+            <h2>Bienvenue sur mon Portfolio</h2>
+            <p>
+                Je suis Quentin Joly, développeur passionné par la création d'applications web et mobiles.
+                Ce portfolio présente mes différents projets et compétences en développement.
+                <a href="apropos.html" class="about-link">En savoir plus sur moi →</a>
+            </p>
+        </section>
+
+        <!-- Section des projets récents -->
+        <section class="projects-container">
+            <h1>Projets Récents</h1>
+            <p class="projects-intro">
+                Découvrez mes projets les plus récents. Cliquez sur "En savoir plus" pour voir les détails de chaque projet.
+            </p>
+
+            <div class="projects-section">
+                <ul class="projects-grid">
+                    <li class="project-card">
+                        <h2>Sconote</h2>
+                        <img src="../ressources/img/project1.png" alt="Capture d'écran du projet Sconote">
+                        <p>Application web de gestion de notes pour les étudiants.</p>
+                        <div class="technologies">
+                            <p>HTML / CSS</p>
+                            <p>PHP</p>
+                            <p>JS</p>
+                        </div>
+                        <a href="#" class="button-projects">En savoir plus</a>
+                    </li>
+
+                    <li class="project-card">
+                        <h2>Paperback's Extensions</h2>
+                        <img src="../ressources/img/ScreenPaperback.png" alt="Capture d'écran du projet Paperback's Extensions">
+                        <p>Extensions pour l'application de lecture Paperback.</p>
+                        <div class="technologies">
+                            <p>TypeScript</p>
+                            <p>API</p>
+                        </div>
+
+                        <a href="#" class="button-projects">En savoir plus</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 </div>
 
@@ -50,4 +101,3 @@
 <script src="navigation.js"></script>
 </body>
 </html>
-
