@@ -16,7 +16,7 @@
     <nav class="main-nav">
         <ul>
             <li>
-                <a href="./" >
+                <a href="./index.html" >
                     <img src="https://img.icons8.com/?size=100&id=i6fZC6wuprSu&format=png&color=ffffff" alt="Accueil" />
                     <span class="label">Accueil</span>
                 </a>
@@ -48,71 +48,95 @@
         <!-- Contenu principal selon la page -->
 
         <div id="projets" class="projects-container">
-            <h1>Mes Projets</h1>
-            <p class="projects-intro">
-                Sur cette page, vous trouverez mes différents projets, qu'ils aient été réalisé dans le cadre de mes études, ou à titre personnel.
-                Certains sont encore en développement.
-            </p>
+            <div class="projects-intro">
+                <h1>Mes Projets</h1>
+                <p>
+                    Sur cette page, vous trouverez mes différents projets, qu'ils aient été réalisé dans le cadre de mes études, ou à titre personnel.
+                    Certains sont encore en développement.
+                </p>
+            </div>
 
-            <div class="projects-section">
-                <div class="projets-type">
-                    <h2>Académiques</h2>
-                    <ul class="projects-grid">
 
-                        <li class="project-card">
-                            <h2>Sconote</h2>
-                            <p>Application web de gestion de notes pour les étudiants permettant d'enregistrer et organiser les notes de cours, suivre ses résultats scolaires et gérer un calendrier d'échéances.</p>
-                            <div class="technologies">
-                                <p>HTML / CSS</p>
-                                <p>PHP</p>
-                                <p>JS</p>
-                                <p>MySQL</p>
-                            </div>
-                            <a href="projet-sconote.html" class="button-projects">En savoir plus</a>
-                        </li>
-                        <li class="project-card">
-                            <h2>Very Bad Split</h2>
-                            <p>Refactoring d'une application web de partage de dépenses entre amis, modernisée avec Symfony, API REST, templates Twig et JavaScript réactif. Pour gérer vos dépenses collectives facilement.</p>
-                            <div class="technologies">
-                                <p>Symfony</p>
-                                <p>PHP</p>
-                                <p>Twig</p>
-                                <p>API REST</p>
-                            </div>
-                            <a href="projet-verybadsplit.html" class="button-projects">En savoir plus</a>
-                        </li>
-                    </ul>
-                </div>
+            <section class="projects-featured">
+                <h2>Professionnels</h2>
+                <ul class="projects-row">
+                    <li class="project-card">
+                        <h2>Développement Back-Office Qobook</h2>
+                        <p>Projet professionnel réalisé en entreprise avec des missions de développement, bonnes pratiques et collaboration en équipe.</p>
+                        <div class="technologies">
+                            <p>HTML / CSS</p>
+                            <p>JavaScript</p>
+                            <p>Git</p>
+                        </div>
+                        <a href="stage.html" class="button-projects">En savoir plus</a>
+                    </li>
+                </ul>
+            </section>
 
-                <hr class="section-divider" />
+            <div>
+                <div class="projects-section">
 
-                <div>
-                    <h2>Personnel</h2>
-                    <ul class="projects-grid">
-                        <li class="project-card">
-                            <h2>Paperback's Extensions</h2>
-                            <p>Extensions pour l'application de lecture Paperback, un lecteur de mangas open source pour iOS. Développement d'API wrappers pour différentes sources de contenu et optimisation des performances.</p>
-                            <div class="technologies">
-                                <p>TypeScript</p>
-                                <p>API REST</p>
-                                <p>GitHub Actions</p>
-                            </div>
-                            <a href="projet-paperback.html" class="button-projects">En savoir plus</a>
-                        </li>
+                    <div class="projets-type">
+                        <h2>Académiques</h2>
+                        <ul class="projects-grid">
 
-                        <li class="project-card">
-                            <h2>GameHub</h2>
-                            <p>Plateforme web regroupant plusieurs jeux classiques (Morpion, Snake, Pong) implémentés en JavaScript avec Canvas. Inclut un système de comptes utilisateurs et des classements globaux.</p>
-                            <div class="technologies">
-                                <p>JavaScript</p>
-                                <p>Canvas API</p>
-                                <p>Firebase</p>
-                            </div>
-                            <a href="projet-gamehub.html" class="button-projects">En savoir plus</a>
-                        </li>
-                    </ul>
+                            <li class="project-card">
+                                <h2>Sconote</h2>
+                                <p>Application web de gestion de notes pour les étudiants permettant d'enregistrer et organiser les notes de cours, suivre ses résultats scolaires et gérer un calendrier d'échéances.</p>
+                                <div class="technologies">
+                                    <p>HTML / CSS</p>
+                                    <p>PHP</p>
+                                    <p>JS</p>
+                                    <p>MySQL</p>
+                                </div>
+                                <a href="projet-sconote.html" class="button-projects">En savoir plus</a>
+                            </li>
+                            <li class="project-card">
+                                <h2>Very Bad Split</h2>
+                                <p>Refactoring d'une application web de partage de dépenses entre amis, modernisée avec Symfony, API REST, templates Twig et JavaScript réactif. Pour gérer vos dépenses collectives facilement.</p>
+                                <div class="technologies">
+                                    <p>Symfony</p>
+                                    <p>PHP</p>
+                                    <p>Twig</p>
+                                    <p>API REST</p>
+                                </div>
+                                <a href="projet-verybadsplit.html" class="button-projects">En savoir plus</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr class="section-divider" />
+
+                    <div class="projets-type">
+                        <h2>Personnel</h2>
+                        <ul class="projects-grid">
+                            <li class="project-card">
+                                <h2>Paperback's Extensions</h2>
+                                <p>Extensions pour l'application de lecture Paperback, un lecteur de mangas open source pour iOS. Développement d'API wrappers pour différentes sources de contenu et optimisation des performances.</p>
+                                <div class="technologies">
+                                    <p>TypeScript</p>
+                                    <p>API REST</p>
+                                    <p>GitHub Actions</p>
+                                </div>
+                                <a href="projet-paperback.html" class="button-projects">En savoir plus</a>
+                            </li>
+
+                            <li class="project-card">
+                                <h2>GameHub</h2>
+                                <p>Plateforme web regroupant plusieurs jeux classiques (Morpion, Snake, Pong) implémentés en JavaScript avec Canvas. Inclut un système de comptes utilisateurs et des classements globaux.</p>
+                                <div class="technologies">
+                                    <p>JavaScript</p>
+                                    <p>Canvas API</p>
+                                    <p>Firebase</p>
+                                </div>
+                                <a href="projet-gamehub.html" class="button-projects">En savoir plus</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
+
 
         </div>
     </main>

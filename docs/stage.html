@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Stage chez Efficience Digitale — Développement Back-Office Qobook</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/projet-template.css" />
+    <link rel="shortcut icon" href="ressources/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="ressources/img/favicon.ico">
+</head>
+<body>
+
+<header>
+    <h1>Mon Stage</h1>
+    <nav class="main-nav">
+        <ul>
+            <li>
+                <a href="./index.html">
+                    <img src="https://img.icons8.com/?size=100&id=i6fZC6wuprSu&format=png&color=000000" alt="Accueil" />
+                    <span class="label">Accueil</span>
+                </a>
+            </li>
+            <li>
+                <a href="apropos.html">
+                    <img src="https://img.icons8.com/?size=100&id=zxB19VPoVLjK&format=png&color=000000" alt="À propos" />
+                    <span class="label">À propos</span>
+                </a>
+            </li>
+            <li>
+                <a href="projets.html" class="active">
+                    <img src="https://img.icons8.com/?size=100&id=oEFC8Dw5xx9o&format=png&color=ffffff" alt="Projets" />
+                    <span class="label">Projets</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <img src="https://img.icons8.com/?size=100&id=PedPR10iVAnY&format=png&color=000000" alt="Contact" />
+                    <span class="label">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="layout">
+    <main class="project-container">
+
+        <!-- En-tête du projet -->
+        <section class="project-header">
+            <h1>Stage chez Efficience Digitale — Développement Back-Office Qobook</h1>
+            <p>Création d’un back-office complet pour l’application mobile Qobook, incluant scripts Node.js, outils internes et interface Retool.</p>
+        </section>
+
+        <!-- Description du projet -->
+        <section class="project-section">
+            <h2>Présentation du stage</h2>
+
+            <p>
+                Ce stage de deuxième année de BUT Informatique s’est déroulé au sein de l’agence
+                <strong>Efficience Digitale</strong>, spécialisée dans le développement web et la création de sites pour divers clients.
+                L’un de leurs projets internes, <strong>Qobook</strong>, est une application mobile regroupant plus de 4 millions de livres,
+                permettant d’accéder à des contenus culturels, des extraits ou encore des espaces thématiques.
+            </p>
+
+            <p>
+                Ma mission principale a été de concevoir et développer une large partie du
+                <strong>back-office permettant de créer, modifier et gérer des espaces personnalisés</strong>
+                dans l’application. Ce back-office devait être utilisable par l’équipe non technique
+                et permettre une gestion entièrement autonome des espaces.
+            </p>
+        </section>
+
+        <!-- Mission principale -->
+        <section class="project-section">
+            <h2>Mission principale : Développement du Back-Office de Qobook</h2>
+
+            <p>
+                Au début du stage, la création d’un espace personnalisé nécessitait l’intervention d’un développeur pour
+                insérer manuellement les données dans la base Supabase.
+                L’objectif était donc d’automatiser totalement cette création via :
+            </p>
+
+            <ul>
+                <li>Un site interne facilitant la création de fichiers CSV structurés</li>
+                <li>Des scripts <strong>Node.js</strong> capables de lire, parser et insérer ces données</li>
+                <li>Un serveur <strong>Express</strong> pour exécuter dynamiquement ces scripts</li>
+                <li>Une intégration finale complète dans <strong>Retool</strong> pour créer un vrai back-office professionnel</li>
+            </ul>
+
+            <h3>1) Prototype « from scratch »</h3>
+
+            <p>
+                J’ai développé un premier prototype autonome comprenant :
+            </p>
+
+            <ul>
+                <li>Un site HTML/JS permettant de générer les fichiers CSV nécessaires (espaces, thèmes, livres, carrousels)</li>
+                <li>Des scripts Node.js (JavaScript côté serveur) pour insérer les données dans la base Supabase</li>
+                <li>Un serveur Express permettant d’exécuter les scripts dynamiquement à partir du navigateur</li>
+                <li>Un script dédié à la modification d’espaces existants</li>
+            </ul>
+
+            <p>
+                Ce prototype m’a permis d’apprendre JavaScript (front + Node.js), de manipuler des APIs Supabase, de gérer des
+                fichiers CSV et de comprendre l’architecture complexe de la base de données de Qobook.
+            </p>
+
+            <h3>2) Version finale sur Retool</h3>
+
+            <p>
+                Lorsque le prototype a été validé, j’ai migré toute la solution vers <strong>Retool</strong>, un outil low-code basé sur React.
+                L’interface finale permet :
+            </p>
+
+            <ul>
+                <li>De lister tous les espaces existants</li>
+                <li>De naviguer entre les pages d’informations, de modification et de création</li>
+                <li>D’effectuer toutes les requêtes via une ressource REST API sécurisée</li>
+                <li>D’ajouter dynamiquement des carrousels via un TabbedContainer</li>
+                <li>De modifier des tables liées (thèmes, livres, composants visuels) via des tableaux éditables</li>
+            </ul>
+
+            <p>
+                Le back-office final permet désormais à toute l’équipe de gérer les espaces personnalisés de façon simple,
+                rapide et sans intervention technique.
+            </p>
+        </section>
+
+        <!-- Technologies utilisées -->
+        <section class="project-section">
+            <h2>Technologies utilisées</h2>
+            <div class="technologies-list">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">Retool</span>
+                <span class="tech-tag">API REST</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">CSV</span>
+                <span class="tech-tag">React (indirect)</span>
+            </div>
+
+            <p>
+                L’ensemble du projet repose sur une architecture orientée scripts Node.js, requêtes API et interfaces internes low-code.
+                Ce mélange m’a permis de découvrir de nouveaux outils et de renforcer mes compétences en développement web moderne.
+            </p>
+        </section>
+
+        <!-- Compétences BUT -->
+        <section class="project-section">
+            <h2>Compétences du BUT Informatique mobilisées</h2>
+
+            <div class="competences-grid">
+
+                <div class="competence-card">
+                    <h3>Compétence 1 : Développer une application</h3>
+                    <ul>
+                        <li>Création de scripts Node.js pour lire et insérer les données</li>
+                        <li>Développement d’une interface interne en JavaScript</li>
+                        <li>Mise en place d’un serveur Express pour exécuter les scripts</li>
+                    </ul>
+                </div>
+
+                <div class="competence-card">
+                    <h3>Compétence 2 : Optimiser des applications</h3>
+                    <ul>
+                        <li>Analyse d’une base de données complexe et existante</li>
+                        <li>Structuration des CSV pour éviter la redondance et faciliter l’insertion</li>
+                        <li>Réduction des manipulations manuelles grâce à l’automatisation</li>
+                    </ul>
+                </div>
+
+                <div class="competence-card">
+                    <h3>Compétence 4 : Gérer des données</h3>
+                    <ul>
+                        <li>Requêtes API Supabase (insert, update, delete)</li>
+                        <li>Manipulation de fichiers CSV et transformation en objets JS</li>
+                        <li>Modélisation pour la gestion des thèmes, livres et carrousels</li>
+                    </ul>
+                </div>
+
+                <div class="competence-card">
+                    <h3>Compétence 5 : Conduire un projet</h3>
+                    <ul>
+                        <li>Analyse des besoins métier avec l’équipe</li>
+                        <li>Choix techniques argumentés (JS, Node, Retool)</li>
+                        <li>Livraison étape par étape : prototype → version stable</li>
+                    </ul>
+                </div>
+
+                <div class="competence-card">
+                    <h3>Compétence 6 : Travailler en équipe</h3>
+                    <ul>
+                        <li>Collaboration avec le lead dev et un alternant</li>
+                        <li>Prises d’initiative pour améliorer l’ergonomie des outils internes</li>
+                        <li>Communication régulière avec les équipes non techniques</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Autres missions -->
+        <section class="project-section">
+            <h2>Autres missions réalisées durant le stage</h2>
+
+            <h3>Correction du style d’un site WordPress</h3>
+            <p>
+                J’ai finalisé un site client en corrigeant des problèmes d’affichage, de responsive design
+                et de structure CSS. Cette mission m’a permis d’apprendre à utiliser WordPress et Elementor.
+            </p>
+
+            <h3>Vérification des droits d’auteur d’images</h3>
+            <p>
+                J’ai participé à la vérification des images utilisées dans des magazines en ligne,
+                via Google Lens, afin de corriger ou remplacer celles qui n’étaient pas libres de droits.
+            </p>
+        </section>
+
+    </main>
+</div>
+
+<footer>
+    <p>&copy; 2025 Quentin Joly. Tous droits réservés.</p>
+</footer>
+
+<script src="navigation.js"></script>
+
+</body>
+</html>

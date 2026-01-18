@@ -103,7 +103,7 @@
 }
 
 .interest-card {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 12px;
     padding: 1.5rem;
@@ -185,7 +185,7 @@
 }
 
 .project-card {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 12px;
     padding: 1.5rem;

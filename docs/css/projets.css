@@ -51,6 +51,44 @@
     gap: 1.5rem;
 }
 
+/* Section mise en avant: projets professionnels en largeur */
+.projects-featured {
+    margin: 2rem 0 3rem;
+    text-align: center; /* centrer le titre comme l'intro */
+}
+
+.projects-featured h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.25rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.projects-featured h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.projects-row {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* permet de passer à la ligne si nécessaire */
+    gap: 2rem;
+    justify-content: center; /* centrer au milieu du conteneur parent */
+    align-items: stretch;
+    max-width: 100%;
+}
+
 .projects-section h2 {
     font-size: 1.8rem;
     margin-bottom: 2rem;
@@ -91,7 +129,7 @@
 }
 
 .project-card {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 12px;
     padding: 1.5rem;
@@ -163,6 +201,11 @@
     align-self: flex-start;
 }
 
+/* Cas particulier: section Professionnels avec une seule carte (Stage) → centrer le bouton */
+.projects-featured .button-projects {
+    align-self: center;
+}
+
 .button-projects:hover {
     background-color: #f0f0f0;
     transform: translateY(-2px);
@@ -187,6 +230,11 @@
 
     .projects-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .projects-row {
+        flex-direction: column;
         gap: 1.5rem;
     }
 
